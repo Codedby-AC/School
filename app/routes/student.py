@@ -47,39 +47,75 @@ def get_students():
     
     return students
 
-@router.get("/students/{stidents_id}/analysis")
+@router.get("/students/{student_id}/analysis")
+
+
 
 def analyze_student(student_id: int):
-    
+
     db: Session = SessionLocal()
-    
-    student= db.query(Student).filter(
+
+    student = db.query(Student).filter(
         Student.id == student_id
-        ).first()
-    
+    ).first()
+
     if not student:
         return {
             "message": "Student not found"
-            }
-    
-    marks = {
-        "Maths": student.maths_marks,
-        "Science": student.science_marks,
-        "English": student.english_marks
         }
-    
-    weak_subject = min(marks, key = marks.get)
+
+    marks = {
+
+        "Maths": student.maths_marks,
+
+        "Science": student.science_marks,
+
+        "English": student.english_marks
+    }
+
+    weak_subject = min(marks, key=marks.get)
 
     average_marks = (
-        student.maths_marks+
-        student.science_marks+
+
+        student.maths_marks +
+
+        student.science_marks +
+
         student.english_marks
-        )/3
-    
+
+    ) / 3
+
+    recommendations = {
+
+        "Maths": "Spend extra 2 hours daily solving Maths problems",
+
+        "Science": "Revise Science concepts and practice diagrams daily",
+
+        "English": "Spend extra time on English grammar and writing practice"
+    }
+
+    recommendation = recommendations.get(
+
+        weak_subject,
+
+        "No recommendation available"
+    )
+
     return {
-        
+
         "student_name": student.name,
+
         "weak_subject": weak_subject,
-        "average_marks": average_marks
-        }    
+
+        "average_marks": average_marks,
+
+        "recommendation": recommendation
+    }
+    
+    
+
+
+    
+    
+    
     
