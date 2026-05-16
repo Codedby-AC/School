@@ -46,4 +46,40 @@ def get_students():
     students = db.query(Student).all()
     
     return students
+
+@router.get("/students/{stidents_id}/analysis")
+
+def analyze_student(student_id: int):
+    
+    db: Session = SessionLocal()
+    
+    student= db.query(Student).filter(
+        Student.id == student_id
+        ).first()
+    
+    if not student:
+        return {
+            "message": "Student not found"
+            }
+    
+    marks = {
+        "Maths": student.maths_marks,
+        "Science": student.science_marks,
+        "English": student.english_marks
+        }
+    
+    weak_subject = min(marks, key = marks.get)
+
+    average_marks = (
+        student.maths_marks+
+        student.science_marks+
+        student.english_marks
+        )/3
+    
+    return {
+        
+        "student_name": student.name,
+        "weak_subject": weak_subject,
+        "average_marks": average_marks
+        }    
     
