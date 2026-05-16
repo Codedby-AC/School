@@ -15,5 +15,5 @@ class StudentCreate(BaseModel):
     
     science_marks: float
     
-    english_marls: float
+    english_marks: float
     
