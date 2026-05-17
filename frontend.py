@@ -1,6 +1,13 @@
 import streamlit as st
 import requests
 
+if "logged_in" not in st.session_state:
+    
+    st.session_state.logged_in = False
+    
+if "page" not in st.session_state:
+    st.session_state.page = "Home"
+
 st.set_page_config(
     page_title = "AI School Management System",
     layout = "centered"
@@ -12,21 +19,63 @@ st.sidebar.title("Navigation")
 
 page = st.sidebar.selectbox(
     "GO To",
-    ["Home", "Signup", "Login"]
+    ["Home", "Signup"]
     )
 
 #--------Home----------
 
-if page == "Home":
+if st.session_state.page == "Home":
+    
     st.title("Ai School Management System")
     
     st.subheader("Smart Student Sanalysis Platform")
     
     st.write(
-        "use the sidebar to Signup or Login."
+        "Welcome to the AI-Powered School Maanagement System")
+    
+    st.write(
+        "Please login to continue."
         )
     
+#Login Form
     
+    email = st.text_input("Enter Email")
+
+    password = st.text_input(
+        "Enter password",
+        type = "password"
+    )
+
+    if st.button("Login"):
+        login_data = {
+            "email": email,
+            "password": password
+            }
+        
+        response = requests.post(
+            "http://127.0.0.1:8000/login",
+            
+            json = login_data
+            )
+        
+        if response.status_code == 200:
+            
+            st.session_state.logged_in = True
+            
+            st.success("Login Successful")
+            
+            st.session_state.logged_in = True
+            
+            st.session_state.page = "Dashboard"
+            
+            st.rerun()
+            
+        else:
+            
+            st.error(
+                "Invalid email or password"
+                )
+            
 #-------Signup-------
 
 elif page == "Signup":
@@ -58,52 +107,53 @@ elif page == "Signup":
             
             st.success("Signup Sccessfull! Now Login")
             
-#---------Login-------
 
-elif page == "Login":
+#--------Dashboard---------
+
+if st.session_state.page == "Dashboard":
     
-    st.title("Student Login")
+    st.title("Student Dashboard")
     
-    email = st.text_input("Enter Email")
+    st.success("Welcome to Dashboard")
     
-    password = st.text_input("Enter Password", type = "password")
+    st.subheader("Student Registration Form")
     
-    if st.button("Login"):
+    name = st.text_input("Student Name")
+    
+    student_class = st.text_input("Class")
+    
+    section = st.text_input("Section")
+    
+    roll_number = st.number_input("Roll Number", min_value = 1)
+    
+    maths_marks = st.number_input("Maths Marks", min_value=0, max_value=100)
+    
+    science_marks = st.number_input("Science Marks",min_value = 0, max_value = 100)
+    
+    english_marks = st.number_input("English Marks", min_value = 0, max_value=100)
+    
+    if st.button("Register Student"):
         
-        login_data = {
-            "email": email,
-            "password": password
+        student_data = {
+            "name": name,
+            "student_class": student_class,
+            "section": section,
+            "roll_number": int(roll_number),
+            "maths_marks": maths_marks,
+            "science_marks": science_marks,
+            "english_marks": english_marks
             }
-        
         response = requests.post(
-            "http://127.0.0.1:8000/login",
+            "http://127.0.0.1:8000/students",
             
-            json = login_data
+            json = student_data
             )
-        
         if response.status_code == 200:
             
-            st.success("Login Successfull")
-            
-            st.subheader("Testing Dashboard")
-            
-            student_name = st.text_input(
-                "Student Name"
+            st.success(
+                "Student Registeres Successfully"
                 )
-            student_class = st.text_input(
-                "Maths Marks"
-                )
-            
-            maths_marks = st.number_input(
-                "Maths Marks"
-                )
-            
-            science_marks = st.number_input(
-                "Science Marks"
-                )
-            
-            st.button("submit")
             
         else:
-            st.error(
-                "No User found. please Signup first.")
+            st.error(response.text)
+        
