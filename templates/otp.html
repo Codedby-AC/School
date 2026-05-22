@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>AI School: OTP Verification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/ai-school-theme.css">
+</head>
+
+<body class="auth-page">
+    <div class="auth-card">
+        <div class="auth-logo">
+            <a href="index.html">
+                <img src="img/logo-ai.png" alt="AI School Logo">
+            </a>
+        </div>
+        <h2 class="auth-title">Verify Identity</h2>
+        <p class="auth-subtitle">Enter the 6-digit access code sent to your email.</p>
+
+        <form class="auth-form" action="login.html">
+            <div class="otp-container">
+                <input type="text" class="otp-input" maxlength="1" autofocus>
+                <input type="text" class="otp-input" maxlength="1">
+                <input type="text" class="otp-input" maxlength="1">
+                <input type="text" class="otp-input" maxlength="1">
+                <input type="text" class="otp-input" maxlength="1">
+                <input type="text" class="otp-input" maxlength="1">
+            </div>
+
+            <button type="submit" class="auth-btn">Verify Access</button>
+        </form>
+
+        <div class="auth-links mt-4">
+            Didn't receive the code? <a href="#">Resend Code</a>
+        </div>
+    </div>
+</body>
+
+</html>

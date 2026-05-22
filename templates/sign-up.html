@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>AI School: Sign Up</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/static/css/font-awesome.css">
+
+<link rel="stylesheet" href="/static/css/ai-school-theme.css">
+</head>
+
+<script>
+
+document.getElementById("signupForm")
+.addEventListener(
+"submit",
+
+async function(event){
+
+event.preventDefault()
+
+const name =
+document.getElementById("name").value
+
+const email =
+document.getElementById("email").value
+
+const password =
+document.getElementById("password").value
+
+try {
+
+const response = await fetch(
+"http://127.0.0.1:8000/users",
+
+{
+method: "POST",
+
+headers: {
+"Content-Type": "application/json"
+},
+
+body: JSON.stringify({
+
+name: name,
+email: email,
+password: password
+
+})
+}
+)
+
+const data = await response.json()
+
+console.log(data)
+
+if(response.ok){
+
+alert("Signup Successful")
+
+}
+else{
+
+alert("Signup Failed")
+
+}
+
+}
+catch(error){
+
+console.log(error)
+
+alert("Server Error")
+}
+
+}
+)
+
+</script>
+<body class="auth-page">
+    <div class="auth-card">
+        <div class="auth-logo">
+            <a href="index.html">
+                <img src="../static/img/logo-ai.png" alt="AI School Logo">
+            </a>
+        </div>
+        <h2 class="auth-title">Join the Revolution</h2>
+        <p class="auth-subtitle">Create an account to start building models.</p>
+
+        <form class="auth-form"  id = "signupForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <i class="fa fa-user input-icon"></i>
+                <input type="text" class="form-control" placeholder="John Doe" required id = "name">
+            </div>
+            
+            <div class="form-group">
+                <label>Email Address</label>
+                <i class="fa fa-envelope input-icon"></i>
+                <input type="email" class="form-control" placeholder="john@aischool.dev" required name = "email">
+            </div>
+            
+            <div class="form-group">
+                <label>Password</label>
+                <i class="fa fa-lock input-icon"></i>
+                <input type="password" class="form-control" placeholder="••••••••" required id = "password">
+            </div>
+<!--
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <i class="fa fa-check-circle input-icon"></i>
+                <input type="password" class="form-control" placeholder="••••••••" required>
+            </div>
+<-->
+            <button type="submit" class="auth-btn mt-3">Create Account <i class="fa fa-user-plus ms-2"></i></button>
+        </form>
+
+        <div class="auth-links">
+            Already have an account? <a href="login.html">Login Here</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -17,14 +17,14 @@ st.set_page_config(
 
 st.sidebar.title("Navigation")
 
-page = st.sidebar.selectbox(
+page = st.sidebar.radio(
     "GO To",
     ["Home", "Signup"]
     )
 
 #--------Home----------
 
-if st.session_state.page == "Home":
+if page == "Home":
     
     st.title("Ai School Management System")
     
@@ -110,11 +110,11 @@ elif page == "Signup":
 
 #--------Dashboard---------
 
-if st.session_state.page == "Dashboard":
+if st.session_state.logged_in:
     
-    st.title("Student Dashboard")
+    st.title("Student Academic Portal")
     
-    st.success("Welcome to Dashboard")
+    st.success("Complete Academic Portal")
     
     st.subheader("Student Registration Form")
     
@@ -132,7 +132,7 @@ if st.session_state.page == "Dashboard":
     
     english_marks = st.number_input("English Marks", min_value = 0, max_value=100)
     
-    if st.button("Register Student"):
+    if st.button("Save Academic Details"):
         
         student_data = {
             "name": name,

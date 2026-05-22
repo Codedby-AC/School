@@ -1,0 +1,944 @@
+
+@media only screen and (min-width: 1400px) and (max-width: 1699.98px){
+    .myBookingSection {
+        padding: 15px;
+    }
+    .myBookingSection .service-img-block img {
+        height: 130px !important;
+        width: 130px !important;
+    }
+    .myBookingSection .request-detais-rightBox {
+        width: calc(100% - 145px);
+    }
+    
+    .myBookingSection .requests-card {
+        padding: 10px;
+    }
+    .myBookingSection .cleaning-details-track {
+        font-size: 13px;
+    }
+    .upcomin-service-detail .btn-primary {
+        padding: 8px 17px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
+    .upcomin-service-detail .btn-primary {
+        padding: 8px 17px;
+        font-size: 14px;
+    }
+    .myBookingSection {
+        padding: 15px;
+    }
+    .myBookingSection .service-img-block img {
+        height: 130px !important;
+        width: 130px !important;
+    }
+    .myBookingSection .request-detais-rightBox {
+        width: calc(100% - 145px);
+    }
+    
+    .myBookingSection .requests-card {
+        padding: 10px;
+    }
+    .myBookingSection .cleaning-details-track {
+        font-size: 13px;
+    }
+    .my-profile {
+        margin-top: 20px;
+    }
+    .prv-inner-left img {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+    .prv-ex-info {
+        gap: 20px;
+    }
+    .employ-detail-content {
+        padding: 14px 0 0 110px;
+    }
+    .servicesImg_box img {
+        min-width: 305px;
+        max-width: 305px;
+        max-height: 214px;
+        min-height: 214px;
+    }
+    .request-heading {
+        font-size: 18px;
+    }
+    .prv-name {
+        font-size: 18px;
+    }
+    .prv-name span {
+        font-size: 15px;
+    }
+    .profile-name {
+        font-size: 22px;
+    }
+    .prv-inner-right .provider-work-info {
+        width: 440px;
+    }
+    .my-email {
+        font-size: 15px;
+    }
+
+    .my-account-menu {
+        margin: 47px 0 47px;
+    }
+
+    .menu_label {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .main_content {
+        padding: calc(75px + 24px) 30px 30px;
+    }
+    .nav_dash_wrap {
+        padding: 15px 30px;
+    }
+    .states-icon {
+        flex: 0 0 60px;
+        margin-right: 14px;
+        max-width: 60px;
+        height: 60px;
+    }
+    .states-title {
+        font-size: 35px;
+    }
+    .dashboard-stats-box {
+        padding: 17px 18px;
+        border-radius: 15px;
+    }
+    .white-box {
+        border-radius: 15px;
+        padding: 18px;
+    }
+    .request-heading {
+        font-size: 18px;
+    }
+    .common-heading-box .heading-text {
+        font-size: 18px;
+    }
+    .request-time span {
+        display: block;
+    }
+    .time-avalilability-head {
+        margin-bottom: 15px;
+    }
+    .service-inHousePriceTRack {
+        font-size: 16px;
+    }
+    .service-inHouseTrack {
+        font-size: 15px;
+    }
+    .request-heading {
+        font-size: 18px;
+    }
+    .service-inHouseBlock {
+        padding: 12px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1199.98px) {
+    .paymentCard {
+        padding: 18px;
+    }
+    .cardTitle {
+        font-size: 18px;
+    }
+    .carddetailTrack {
+        font-size: 13px;
+    }
+    .card_icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .prv-inner-left img {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+    .prv-ex-info {
+        gap: 20px;
+    }
+    .employ-detail-content {
+        padding: 14px 0 0 98px;
+    }
+  
+    .request-heading {
+        font-size: 18px;
+    }
+    .prv-name {
+        font-size: 18px;
+    }
+    .prv-name span {
+        font-size: 15px;
+    }
+    .profile-name {
+        font-size: 22px;
+    }
+    .prv-inner-right .provider-work-info {
+        width: 440px;
+    }
+    .my-email {
+        font-size: 15px;
+    }
+
+    .time-availability-heading {
+        font-size: 20px;
+    }
+    .servicesImg_box img {
+        min-width: 235px;
+        max-width: 235px;
+        max-height: 154px;
+        min-height: 154px;
+        border-radius: 5px;
+    }
+    .servicesImg_status {
+        height: 30px;
+        border-radius: 4px;
+        top: 10px;
+        left: 14px;
+    }
+    .service-inHousePrice {
+        padding-bottom: 6px;
+        margin-bottom: 6px;
+    }
+    .servicesContent_box .btn-primary {
+        font-size: 16px;
+    }
+    .flashServicesCard_des {
+        max-width: 250px;
+    }
+
+
+
+
+
+
+    .edit-text-btn {
+        top: -20px;
+    }
+
+    .my-profile {
+        margin-top: 20px;
+    }
+
+    .my-profile img {
+        margin: 0 auto 10px;
+    }
+
+    .profile-name {
+        font-size: 20px;
+    }
+
+    .my-email {
+        font-size: 15px;
+    }
+
+    .my-account-menu {
+        margin: 47px 0 47px;
+    }
+
+    .menu_label {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .states-icon {
+        flex: 0 0 60px;
+        margin-right: 14px;
+        max-width: 60px;
+        height: 60px;
+    }
+    .states-title {
+        font-size: 35px;
+    }
+    .dashboard-stats-box {
+        padding: 17px 18px;
+        border-radius: 15px;
+    }
+    .white-box {
+        border-radius: 15px;
+        padding: 18px;
+    }
+    .request-heading {
+        font-size: 18px;
+    }
+    .common-heading-box .heading-text {
+        font-size: 18px;
+    }
+    .request-time span {
+        display: block;
+    }
+
+    .time-avalilability-head {
+        margin-bottom: 15px;
+    }
+    .service-inHousePriceTRack {
+        font-size: 16px;
+    }
+    .service-inHouseTrack {
+        font-size: 15px;
+    }
+    .request-heading {
+        font-size: 18px;
+    }
+    .service-inHouseBlock {
+        padding: 12px 10px;
+    }
+    .main_content {
+        padding: calc(75px + 24px) 30px 30px;
+    }
+    .nav_dash_wrap {
+        padding: 15px 30px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .address-card-item {
+        border-radius: 15px;
+    }
+
+    .address-card-item {
+        padding: 16px 18px;
+    }
+
+    .checkblock {
+        margin-bottom: 8px;
+    }
+
+    .type-address {
+        font-size: 18px;
+    }
+
+    .full-address {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .user-number {
+        font-size: 16px;
+    }
+    .no-record-img {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .modal-states {
+        max-width: 566px;
+    }
+
+    .is-folded .side_nav {
+        width: 80px
+    }
+
+    .is-folded .side_nav .side_nav_inner .sideNav_menu {
+        overflow-x: hidden
+    }
+
+
+    .is-folded .side_nav .side_nav_inner .sideNav_menu>li>a .title_dash_nav {
+        display: none
+    }
+
+    .is-folded .side_nav .side_nav_inner .sideNav_menu li .icon_holder {
+        flex: 0 0 21px;
+    }
+
+    .is-folded .side_nav .side_nav_inner .sideNav_menu li .arrowIconSubmenu {
+        opacity: 0
+    }
+
+    .is-folded .side_nav .side_nav_inner .sideNav_menu li .subMenuSide {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.35s ease;
+    }
+
+    .is-folded .side_nav:hover {
+        width: 280px
+    }
+    .is-folded .dash_nav_item a {
+        justify-content: center;
+    }
+    .is-folded .side_nav:hover .dash_nav_item a {
+        justify-content: left;
+    }
+    .is-folded .side_nav:hover .side_nav_inner .sideNav_menu>li>a .title_dash_nav {
+        display: inline-block
+    }
+
+    .is-folded .side_nav:hover .side_nav_inner .sideNav_menu li .arrowIconSubmenu {
+        opacity: 1
+    }
+
+    .is-folded .side_nav:hover .side_nav_inner .sideNav_menu li .subMenuSide.show {
+        height: auto;
+        display: block;
+    }
+
+    .is-folded .side_nav:hover .side_nav_inner .sideNav_menu li .icon_holder {
+        flex: 0 0 40px;
+        text-align: center;
+    }
+
+
+    .is-folded .dash_header .dash_logo {
+        width: 80px
+    }
+
+    .is-folded .dash_header .dash_logo img {
+        display: none
+    }
+
+    .is-folded .dash_header .dash_logo .logo_fold {
+        display: block;
+        height: 60px;
+        width: 60px;
+    }
+
+    .is-folded .dash_header .dash_logo .logo_fold svg {
+        width: 45px;
+    }
+
+    .is-folded .page_container {
+        padding-left: 80px
+    }
+
+
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    .address-card-item {
+        border-radius: 15px;
+    }
+
+    .address-card-item {
+        padding: 18px;
+    }
+
+    .type-address {
+        font-size: 18px;
+    }
+
+    .checkblock {
+        margin-bottom: 5px;
+    }
+
+    .full-address {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .user-number {
+        font-size: 18px;
+    }
+    /*  */
+    .flashServicesCard_des {
+        max-width: 260px;
+    }
+    .my-profile img {
+        width: 90px;
+        height: 90px;
+    }
+    .states-title {
+        font-size: 32px;
+    }
+    .states-icon {
+        flex: 0 0 50px;
+        max-width: 50px;
+        height: 50px;
+    }
+    .states-icon  svg{
+        width: 25px;
+        height: 25px;
+    }
+    .common-heading-box .heading-text {
+        font-size: 20px;
+    }
+    .servicesImg_box img {
+        min-width: 285px;
+        max-width: 285px;
+        max-height: 200px;
+        min-height: 200px;
+    }
+    .service-inHousePriceTRack {
+        font-size: 16px;
+    }
+    .request-heading {
+        font-size: 18px;
+    }
+    .rightMenuBtn {
+        color: #fff;
+        background: transparent;
+    }
+
+    .submit-box {
+        margin-top: 28px;
+    }
+
+    .nav_right_notification {
+        margin: 0 0 0 20px;
+    }
+
+    .side_nav {
+        left: -325px
+    }
+
+    .page_container {
+        padding-left: 0px
+    }
+
+    .is-folded .side_nav {
+        left: 0;
+    }
+
+    .dash_header .dash_logo {
+        width: auto;
+        padding-left: 20px;
+    }
+    .nav_dash_wrap {
+        border: 0;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row-reverse;
+        background: #000;
+    }
+
+    .dashIconFold svg {
+        color: #fff;
+    }
+
+    .dashIconFold:hover svg {
+        color: #fff;
+    }
+
+    .dropdown-toggle.lang_drop {
+        color: #fff;
+    }
+
+    .dashIconFold {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+
+    .nav_dash_wrpRight {
+        margin-left: auto;
+    }
+
+    .dash_userProfile {
+        display: none;
+    }
+
+    .is-folded .dashBoard_overLay {
+        visibility: visible;
+        opacity: 1;
+    }
+    .no-record-img {
+        max-width: 300px;
+    }
+}
+
+
+
+
+@media (max-width:767.98px) {
+    .no-record-img {
+        max-width: 160px;
+    }
+    .employee-details-box .prv-inner-right .provider-work-info {
+        width: 100%;
+    }
+    .employee-details-box .job-info.experience-info {
+        padding-left: 0;
+    }
+    .notifi_list {
+        padding: 18px 0 20px 0;
+        gap: 12px;
+    }
+
+    .notifiTitle {
+        font-size: 16px;
+    }
+
+    .contact_leftImg img {
+        max-height: 260px;
+    }
+
+    .footer-btn {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    /*  */
+    .holidays_input_box {
+        flex: auto;
+    }
+    .day-row {
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .profile-name {
+        font-size: 18px;
+    }
+    .page-titles {
+        font-size: 18px;
+    }
+    .back-btn {
+        margin-right: 10px;
+    }
+    .servicesImg_box img {
+        min-width: 205px;
+        max-width: 205px;
+        max-height: 140px;
+        min-height: 140px;
+    }
+    .servicesImg_status {
+        font-size: 12px;
+    }
+    .request-heading {
+        font-size: 16px;
+    }
+    .service-inHouseTrack {
+        font-size: 14px;
+    }
+    .service-inHousePriceTRack {
+        font-size: 15px;
+    }
+    .btn-primary {
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+
+    .flashServicesCard_des {
+        max-width: 230px;
+    }
+    .states-title {
+        font-size: 24px;
+    }
+    .states-icon {
+        flex: 0 0 50px;
+        height: 50px;
+        max-width: 50px;
+        margin-right: 12px;
+    }
+    .states-icon svg {
+        width: 25px;
+        height: 25px;
+    }
+    .dashboard-stats-box {
+        padding: 14px 16px;
+        border-radius: 10px;
+    }
+    .common-heading-box .heading-text {
+        font-size: 20px;
+    }
+    .common-heading-box {
+        margin-bottom: 15px;
+    }
+    .nav_right_notification {
+        margin: 0 0px 0 6px;
+    }
+
+    .rigth-filter-btn {
+        gap: 17px;
+    }
+
+    .dashIconFold {
+        margin-left: 5px;
+    }
+
+    .dash_header {
+        height: 70px;
+    }
+
+    .nav_dash_wrap {
+        padding: 5px 15px;
+        border-bottom: 0;
+    }
+
+
+    .main_content {
+        padding: calc(70px + 15px) 15px 15px;
+    }
+
+    .side_nav {
+        top: 70px;
+    }
+}
+
+
+@media (max-width:575.98px) {
+    .user-content {
+        flex-wrap: wrap;
+    }
+    .request-detais-rightBox {
+        width: 100%;
+    }
+    .user-img.service-img-block {
+        width: 100%;
+    }
+    .service-img-block img {
+        width: 100% !important;
+        height: 170px !important;
+    }
+    .user-content .user-profile {
+        width: 100%;
+        justify-content: start;
+    }
+    
+    .request-detaiTrack {
+        flex-wrap: wrap;
+    }
+    .upcomin-service-detail .request-btn-block {
+        margin-bottom: 0;
+    }
+    .upcomin-service-detail .request-btn-block {
+        justify-content: end;
+        width: fit-content;
+    }
+    .upcomin-service-detail  .user-profile {
+        width: fit-content;
+    }
+    .upcomin-service-detail {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+
+    .card-btn-box {
+        margin-bottom: 6px;
+    }
+    .notifi_list {
+        padding: 13px 0 15px 0;
+    }
+    .time-availability-heading {
+        font-size: 18px;
+    }
+    .employ-detail-content {
+        padding: 14px 0 0 0;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+    .employee-details-box .prv-inner-left img {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+    }
+    .employee-details-box .prv-inner-left {
+        gap: 15px;
+    }
+   .employee-details-box  .prv-inner-right {
+        padding: 13px 0 0 80px;
+    }
+    .search_block {
+        min-width: 200px;
+    }
+
+    .theme_table tbody,
+    .theme_table td,
+    .theme_table tr th {
+        padding: 15px 18px;
+    }
+
+    .serviceType_box {
+        gap: 15px 25px;
+        flex-wrap: wrap;
+    }
+
+    .footer-btn button {
+        min-width: 120px;
+        padding: 10px;
+    }
+
+    .cancel-btn {
+        min-width: 157px;
+        padding-block: 9px;
+    }
+
+    /*  */
+    .tooltip-inner {
+        max-width: 245px;
+    }
+
+    .address-card-item {
+        flex: 100%;
+        width: 100%;
+    }
+
+    .notifiTitle {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    /*  */
+    .flashServicesCard_details {
+        display: block;
+        width: 100%;
+    }
+    .dash_header .langugae_filter .nav-link.lang_drop svg,
+    .dash_header .navbar-nav .nav-link.lang_drop svg {
+        display: none;
+    }
+
+    .dash_header .dash_logo {
+        justify-content: flex-start;
+    }
+
+    .edit-text-btn {
+        top: -10px;
+    }
+
+    .submit-box .save-btn {
+        min-width: 157px;
+        padding-block: 9px;
+    }
+
+    .my-profile {
+        margin-top: 10px;
+    }
+
+    .profile-name {
+        font-size: 18px;
+    }
+
+    .my-account-menu {
+        margin: 37px 0 37px;
+    }
+
+    .menu_list_title {
+        gap: 12px;
+    }
+
+    .menu_label {
+        font-size: 16px;
+    }
+
+    .white-box {
+        padding: 16px;
+    }
+
+    .menu-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .dash_header .dash_logo img {
+        display: none;
+    }
+
+    .dash_header .dash_logo .logo_fold {
+        display: block;
+        height: 60px;
+        width: 45px;
+    }
+
+    .side_nav {
+        width: 275px;
+    }
+
+    .fillter-text{
+        display: none;
+    }
+    .tabs-section {
+        gap: 14px;
+    }
+    .tabs-section .theme-tabs {
+        width: calc(100% - 65px);
+    }
+    .filter_btn {
+        border-radius: 5px;
+        padding: 6px 10px;
+    }
+    .myServicesAdd_btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .myServicesAdd_btn svg {
+        width: 16px;
+    }
+    .add-new-btn {
+        gap: 8px;
+    }
+  
+    .flashServicesCard_content .btn-primary {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .regularServices {
+        flex-wrap: wrap;
+    }
+    .servicesImg_box {
+        width: 100%;
+    }
+    .servicesImg_box img {
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 240px;
+        min-height: 240px;
+        width: 100%;
+    }
+}
+
+@media (max-width:480.98px){
+    .card-right-content {
+        text-align: start;
+    }
+    .card-header {
+        flex-wrap: wrap;
+    }
+    .request-time span,
+    .estimated-time span {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .tabs-section .theme-tabs {
+        width: calc(100% - 55px);
+    } 
+    .filter_btn {
+        border-radius: 5px;
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    .tabs-section {
+        gap: 5px;
+    }
+    .nav-pills .nav-link {
+        font-size: 14px;
+        padding: 7px;
+    }
+    .common-heading-box {
+        flex-wrap: wrap;
+    }
+    .set-flash-detail-content {
+        flex-direction: column;
+    }
+    .regularServices {
+        gap: 19px;
+        margin-bottom: 15px;
+    }
+    .servicesImg_box img {
+        max-height: 220px;
+        min-height: 220px;
+    }
+    .servicesContent_box .add-new-btn{
+        margin-left: 0;
+    }
+    .employee-dtl .servicesContent_box {
+        align-items: center;
+    }
+}

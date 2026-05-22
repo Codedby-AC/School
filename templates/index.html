@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% raw %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>AI School: Future Learning Powered by AI</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap  v5.3.0  CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/font-awesome.css">
+<link rel="stylesheet" href="/static/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="/static/css/responsive.css">
+<link rel="stylesheet" href="/static/css/ai-school-theme.css">
+</head>
+
+<body class="homepage">
+    <!-- loader  -->
+    <div class="loader-wrapper" style="display: none;">
+        <div class="loader">
+            <img src="img/loader.png" alt="">
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="arrowTop" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M8.99996 15.9999H6.99996V3.99991L1.49996 9.49991L0.0799561 8.07991L7.99996 0.159912L15.92 8.07991L14.5 9.49991L8.99996 3.99991V15.9999Z"
+                fill="black" />
+        </svg>
+
+        <svg class="progress-circle svg-content" width="50" height="50" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo-ai.png" style="max-height: 55px;" alt="" class="logo-dark">
+                            <img src="img/logo-ai.png" style="max-height: 55px;" alt="" class="logo-white">
+
+                            <img src="img/logo-ai.png" style="max-height: 40px;" alt="" class="logo-icon-dark">
+                            <img src="img/logo-ai.png" style="max-height: 40px;" alt="" class="logo-icon-white">
+                        </a>
+                        <div class="overlay" style="display:none"></div>
+                        <div class="navcollapse navbar-collapse">
+                            <button class="navbar-toggler menuClose-icon" type="button">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link lineEffect" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link lineEffect" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link lineEffect" href="about-us.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link lineEffect" href="contact-us.html">Contact Us</a>
+                                </li>
+                            </ul>
+
+                            <div class="extra_nav">
+                                <ul class="navbar-nav ms-auto">
+                                    <!-- <li class="nav-item langugae_filter for_desktop">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle nav-link dropdown-toggle lang_drop"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="flag_ico"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                                        <path
+                                                            d="M11 20.1663C16.0626 20.1663 20.1666 16.0623 20.1666 10.9997C20.1666 5.93706 16.0626 1.83301 11 1.83301C5.93737 1.83301 1.83331 5.93706 1.83331 10.9997C1.83331 16.0623 5.93737 20.1663 11 20.1663Z"
+                                                            stroke="currentColor" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M1.83333 11H20.1667" stroke="currentColor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M11 1.83301C13.2928 4.34316 14.5958 7.60071 14.6666 10.9997C14.5958 14.3986 13.2928 17.6562 11 20.1663C8.70714 17.6562 7.40412 14.3986 7.33331 10.9997C7.40412 7.60071 8.70714 4.34316 11 1.83301Z"
+                                                            stroke="currentColor" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg></span> Eng
+                                                <i class="far fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu lang_dropdown">
+                                                <li>
+                                                    <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                        <span><img src="img/en.png" alt="English"></span>
+                                                        English</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                        <span><img src="img/spanish.png" alt="Spanish"></span>
+                                                        Spanish
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li> -->
+                                    <!-- 
+                                    <li class="nav-item langugae_filter currency-filter for_desktop">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle nav-link dropdown-toggle lang_drop"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="flag_ico"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                                        <path
+                                                            d="M10.071 20.1818V2H11.2358V20.1818H10.071ZM13.4304 7.81676C13.3641 7.1965 13.0848 6.71354 12.5923 6.3679C12.1046 6.02225 11.4702 5.84943 10.6889 5.84943C10.1397 5.84943 9.66856 5.93229 9.27557 6.09801C8.88258 6.26373 8.58191 6.48864 8.37358 6.77273C8.16525 7.05682 8.05871 7.38116 8.05398 7.74574C8.05398 8.04877 8.12263 8.31155 8.25994 8.53409C8.40199 8.75663 8.59375 8.94602 8.83523 9.10227C9.0767 9.25379 9.34422 9.38163 9.63778 9.4858C9.93134 9.58996 10.2273 9.67756 10.5256 9.74858L11.8892 10.0895C12.4384 10.2173 12.9664 10.3902 13.473 10.608C13.9844 10.8258 14.4413 11.1004 14.8438 11.4318C15.2509 11.7633 15.5729 12.1634 15.8097 12.6321C16.0464 13.1009 16.1648 13.6501 16.1648 14.2798C16.1648 15.1321 15.947 15.8826 15.5114 16.5313C15.0758 17.1752 14.446 17.6795 13.6222 18.044C12.803 18.4039 11.8111 18.5838 10.6463 18.5838C9.51468 18.5838 8.5322 18.4086 7.69886 18.0582C6.87027 17.7079 6.22159 17.1965 5.75284 16.5241C5.28883 15.8518 5.03788 15.0327 5 14.0668H7.59233C7.63021 14.5734 7.78646 14.9948 8.06108 15.331C8.3357 15.6671 8.69318 15.9181 9.13352 16.0838C9.5786 16.2495 10.0758 16.3324 10.625 16.3324C11.1979 16.3324 11.6998 16.2472 12.1307 16.0767C12.5663 15.9015 12.9072 15.66 13.1534 15.3523C13.3996 15.0398 13.5251 14.6752 13.5298 14.2585C13.5251 13.8797 13.4138 13.5672 13.196 13.321C12.9782 13.0701 12.6728 12.8617 12.2798 12.696C11.8916 12.5256 11.437 12.3741 10.9162 12.2415L9.26136 11.8153C8.06345 11.5076 7.11648 11.0412 6.42045 10.4162C5.72917 9.78646 5.38352 8.95076 5.38352 7.90909C5.38352 7.05208 5.61553 6.30161 6.07955 5.65767C6.5483 5.01373 7.18513 4.51421 7.99006 4.15909C8.79498 3.79924 9.70644 3.61932 10.7244 3.61932C11.7566 3.61932 12.661 3.79924 13.4375 4.15909C14.2188 4.51421 14.8319 5.009 15.277 5.64347C15.7221 6.2732 15.9517 6.99763 15.9659 7.81676H13.4304Z"
+                                                            fill="currentColor" />
+                                                    </svg></span> USD
+                                                <i class="far fa-chevron-down"></i>
+                                            </button>
+
+                                            <ul class="dropdown-menu lang_dropdown">
+                                                <li>
+                                                    <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                        <span class="flag_ico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" viewBox="0 0 22 22" fill="none">
+                                                                <path
+                                                                    d="M15.0822 8.673L14.3355 10.2395H4L4.58948 8.673H15.0822ZM13.6753 11.7605L12.9129 13.3422H4L4.58948 11.7605H13.6753ZM17 4.54373L16.0726 6.46768C15.7791 6.22433 15.4595 6.0038 15.1137 5.80608C14.7678 5.60836 14.3958 5.4512 13.9976 5.3346C13.5994 5.21293 13.1723 5.15209 12.7164 5.15209C11.8781 5.15209 11.1314 5.37009 10.4764 5.80608C9.82144 6.24208 9.30532 6.89607 8.92805 7.76806C8.55603 8.63498 8.37001 9.71483 8.37001 11.0076C8.37001 12.3004 8.55603 13.3802 8.92805 14.2471C9.30532 15.1141 9.82144 15.7655 10.4764 16.2015C11.1314 16.6324 11.8781 16.8479 12.7164 16.8479C13.1775 16.8479 13.6072 16.7896 14.0054 16.673C14.4089 16.5564 14.7757 16.4043 15.1058 16.2167C15.4412 16.0241 15.7424 15.8213 16.0097 15.6084L16.9607 17.5247C16.4053 18.0114 15.7608 18.379 15.0272 18.6274C14.2936 18.8758 13.5234 19 12.7164 19C11.4012 19 10.2354 18.6781 9.21886 18.0342C8.20758 17.3904 7.41374 16.4728 6.83736 15.2814C6.26098 14.0849 5.97279 12.6603 5.97279 11.0076C5.97279 9.34981 6.26098 7.92269 6.83736 6.72624C7.41374 5.52978 8.20758 4.60963 9.21886 3.96578C10.2354 3.32193 11.4012 3 12.7164 3C13.5548 3 14.3355 3.13435 15.0586 3.40304C15.7817 3.66667 16.4289 4.04689 17 4.54373Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </span> Euro</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                        <span class="flag_ico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" viewBox="0 0 22 22" fill="none">
+                                                                <path
+                                                                    d="M10.071 20.1818V2H11.2358V20.1818H10.071ZM13.4304 7.81676C13.3641 7.1965 13.0848 6.71354 12.5923 6.3679C12.1046 6.02225 11.4702 5.84943 10.6889 5.84943C10.1397 5.84943 9.66856 5.93229 9.27557 6.09801C8.88258 6.26373 8.58191 6.48864 8.37358 6.77273C8.16525 7.05682 8.05871 7.38116 8.05398 7.74574C8.05398 8.04877 8.12263 8.31155 8.25994 8.53409C8.40199 8.75663 8.59375 8.94602 8.83523 9.10227C9.0767 9.25379 9.34422 9.38163 9.63778 9.4858C9.93134 9.58996 10.2273 9.67756 10.5256 9.74858L11.8892 10.0895C12.4384 10.2173 12.9664 10.3902 13.473 10.608C13.9844 10.8258 14.4413 11.1004 14.8438 11.4318C15.2509 11.7633 15.5729 12.1634 15.8097 12.6321C16.0464 13.1009 16.1648 13.6501 16.1648 14.2798C16.1648 15.1321 15.947 15.8826 15.5114 16.5313C15.0758 17.1752 14.446 17.6795 13.6222 18.044C12.803 18.4039 11.8111 18.5838 10.6463 18.5838C9.51468 18.5838 8.5322 18.4086 7.69886 18.0582C6.87027 17.7079 6.22159 17.1965 5.75284 16.5241C5.28883 15.8518 5.03788 15.0327 5 14.0668H7.59233C7.63021 14.5734 7.78646 14.9948 8.06108 15.331C8.3357 15.6671 8.69318 15.9181 9.13352 16.0838C9.5786 16.2495 10.0758 16.3324 10.625 16.3324C11.1979 16.3324 11.6998 16.2472 12.1307 16.0767C12.5663 15.9015 12.9072 15.66 13.1534 15.3523C13.3996 15.0398 13.5251 14.6752 13.5298 14.2585C13.5251 13.8797 13.4138 13.5672 13.196 13.321C12.9782 13.0701 12.6728 12.8617 12.2798 12.696C11.8916 12.5256 11.437 12.3741 10.9162 12.2415L9.26136 11.8153C8.06345 11.5076 7.11648 11.0412 6.42045 10.4162C5.72917 9.78646 5.38352 8.95076 5.38352 7.90909C5.38352 7.05208 5.61553 6.30161 6.07955 5.65767C6.5483 5.01373 7.18513 4.51421 7.99006 4.15909C8.79498 3.79924 9.70644 3.61932 10.7244 3.61932C11.7566 3.61932 12.661 3.79924 13.4375 4.15909C14.2188 4.51421 14.8319 5.009 15.277 5.64347C15.7221 6.2732 15.9517 6.99763 15.9659 7.81676H13.4304Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </span> USD
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                        <span class="flag_ico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="41"
+                                                                height="19" viewBox="0 0 41 19" fill="none">
+                                                                <path
+                                                                    d="M34.321 18.1818V0H35.4858V18.1818H34.321ZM37.6804 5.81676C37.6141 5.1965 37.3348 4.71354 36.8423 4.3679C36.3546 4.02225 35.7202 3.84943 34.9389 3.84943C34.3897 3.84943 33.9186 3.93229 33.5256 4.09801C33.1326 4.26373 32.8319 4.48864 32.6236 4.77273C32.4152 5.05682 32.3087 5.38116 32.304 5.74574C32.304 6.04877 32.3726 6.31155 32.5099 6.53409C32.652 6.75663 32.8438 6.94602 33.0852 7.10227C33.3267 7.25379 33.5942 7.38163 33.8878 7.4858C34.1813 7.58996 34.4773 7.67756 34.7756 7.74858L36.1392 8.08949C36.6884 8.21733 37.2164 8.39015 37.723 8.60796C38.2344 8.82576 38.6913 9.10038 39.0938 9.43182C39.5009 9.76326 39.8229 10.1634 40.0597 10.6321C40.2964 11.1009 40.4148 11.6501 40.4148 12.2798C40.4148 13.1321 40.197 13.8826 39.7614 14.5313C39.3258 15.1752 38.696 15.6795 37.8722 16.044C37.053 16.4039 36.0611 16.5838 34.8963 16.5838C33.7647 16.5838 32.7822 16.4086 31.9489 16.0582C31.1203 15.7079 30.4716 15.1965 30.0028 14.5241C29.5388 13.8518 29.2879 13.0327 29.25 12.0668H31.8423C31.8802 12.5734 32.0365 12.9948 32.3111 13.331C32.5857 13.6671 32.9432 13.9181 33.3835 14.0838C33.8286 14.2495 34.3258 14.3324 34.875 14.3324C35.4479 14.3324 35.9498 14.2472 36.3807 14.0767C36.8163 13.9015 37.1572 13.66 37.4034 13.3523C37.6496 13.0398 37.7751 12.6752 37.7798 12.2585C37.7751 11.8797 37.6638 11.5672 37.446 11.321C37.2282 11.0701 36.9228 10.8617 36.5298 10.696C36.1416 10.5256 35.687 10.3741 35.1662 10.2415L33.5114 9.81534C32.3134 9.50758 31.3665 9.04119 30.6705 8.41619C29.9792 7.78646 29.6335 6.95076 29.6335 5.90909C29.6335 5.05208 29.8655 4.30161 30.3295 3.65767C30.7983 3.01373 31.4351 2.51421 32.2401 2.15909C33.045 1.79924 33.9564 1.61932 34.9744 1.61932C36.0066 1.61932 36.911 1.79924 37.6875 2.15909C38.4688 2.51421 39.0819 3.009 39.527 3.64347C39.9721 4.2732 40.2017 4.99763 40.2159 5.81676H37.6804Z"
+                                                                    fill="currentColor" />
+                                                                <path
+                                                                    d="M20.3135 5.4541L22.5152 9.48109L24.7524 5.4541H27.4726L24.1842 10.9086L27.5294 16.3632H24.8234L22.5152 12.4356L20.2282 16.3632H17.501L20.8248 10.9086L17.5862 5.4541H20.3135Z"
+                                                                    fill="currentColor" />
+                                                                <path
+                                                                    d="M0 1.81738H3.22443L7.54261 12.3572H7.71307L12.0313 1.81738H15.2557V16.3628H12.7273V6.36994H12.5923L8.57244 16.3202H6.68324L2.66335 6.34863H2.52841V16.3628H0V1.81738Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </span> MXN
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li> -->
+
+                                    <li class="nav-item logBtn" style="margin-right: 15px;">
+                                        <a class="nav-link header_border_btn" href="login.html"
+                                            style="padding: 10px 25px !important; border-radius: 30px; display: flex; align-items: center; gap: 8px;">
+                                            <i class="fa fa-user-circle"></i> Login
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link header_filled_btn" href="/signup"
+                                            style="padding: 10px 30px !important; border-radius: 30px; display: flex; align-items: center; gap: 8px; font-weight: 700; letter-spacing: 0.5px;">
+                                            <i class="fa fa-bolt"></i> Sign Up
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- For Mobile -->
+                        <div class="extra_nav for_mobile">
+                            <ul class="navbar-nav ms-auto">
+                                <!-- <li class="nav-item langugae_filter">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle nav-link dropdown-toggle lang_drop" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="flag_ico"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                    height="22" viewBox="0 0 22 22" fill="none">
+                                                    <path
+                                                        d="M11 20.1663C16.0626 20.1663 20.1666 16.0623 20.1666 10.9997C20.1666 5.93706 16.0626 1.83301 11 1.83301C5.93737 1.83301 1.83331 5.93706 1.83331 10.9997C1.83331 16.0623 5.93737 20.1663 11 20.1663Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M1.83333 11H20.1667" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11 1.83301C13.2928 4.34316 14.5958 7.60071 14.6666 10.9997C14.5958 14.3986 13.2928 17.6562 11 20.1663C8.70714 17.6562 7.40412 14.3986 7.33331 10.9997C7.40412 7.60071 8.70714 4.34316 11 1.83301Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg></span> Eng
+                                            <i class="far fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu lang_dropdown">
+                                            <li>
+                                                <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                    <span><img src="img/en.png" alt="English"></span>
+                                                    English</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                    <span><img src="img/spanish.png" alt="Spanish"></span>
+                                                    Spanish
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li> -->
+
+                                <!-- <li class="nav-item langugae_filter currency-filter">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle nav-link dropdown-toggle lang_drop" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="flag_ico"> <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                    height="22" viewBox="0 0 22 22" fill="none">
+                                                    <path
+                                                        d="M10.071 20.1818V2H11.2358V20.1818H10.071ZM13.4304 7.81676C13.3641 7.1965 13.0848 6.71354 12.5923 6.3679C12.1046 6.02225 11.4702 5.84943 10.6889 5.84943C10.1397 5.84943 9.66856 5.93229 9.27557 6.09801C8.88258 6.26373 8.58191 6.48864 8.37358 6.77273C8.16525 7.05682 8.05871 7.38116 8.05398 7.74574C8.05398 8.04877 8.12263 8.31155 8.25994 8.53409C8.40199 8.75663 8.59375 8.94602 8.83523 9.10227C9.0767 9.25379 9.34422 9.38163 9.63778 9.4858C9.93134 9.58996 10.2273 9.67756 10.5256 9.74858L11.8892 10.0895C12.4384 10.2173 12.9664 10.3902 13.473 10.608C13.9844 10.8258 14.4413 11.1004 14.8438 11.4318C15.2509 11.7633 15.5729 12.1634 15.8097 12.6321C16.0464 13.1009 16.1648 13.6501 16.1648 14.2798C16.1648 15.1321 15.947 15.8826 15.5114 16.5313C15.0758 17.1752 14.446 17.6795 13.6222 18.044C12.803 18.4039 11.8111 18.5838 10.6463 18.5838C9.51468 18.5838 8.5322 18.4086 7.69886 18.0582C6.87027 17.7079 6.22159 17.1965 5.75284 16.5241C5.28883 15.8518 5.03788 15.0327 5 14.0668H7.59233C7.63021 14.5734 7.78646 14.9948 8.06108 15.331C8.3357 15.6671 8.69318 15.9181 9.13352 16.0838C9.5786 16.2495 10.0758 16.3324 10.625 16.3324C11.1979 16.3324 11.6998 16.2472 12.1307 16.0767C12.5663 15.9015 12.9072 15.66 13.1534 15.3523C13.3996 15.0398 13.5251 14.6752 13.5298 14.2585C13.5251 13.8797 13.4138 13.5672 13.196 13.321C12.9782 13.0701 12.6728 12.8617 12.2798 12.696C11.8916 12.5256 11.437 12.3741 10.9162 12.2415L9.26136 11.8153C8.06345 11.5076 7.11648 11.0412 6.42045 10.4162C5.72917 9.78646 5.38352 8.95076 5.38352 7.90909C5.38352 7.05208 5.61553 6.30161 6.07955 5.65767C6.5483 5.01373 7.18513 4.51421 7.99006 4.15909C8.79498 3.79924 9.70644 3.61932 10.7244 3.61932C11.7566 3.61932 12.661 3.79924 13.4375 4.15909C14.2188 4.51421 14.8319 5.009 15.277 5.64347C15.7221 6.2732 15.9517 6.99763 15.9659 7.81676H13.4304Z"
+                                                        fill="currentColor" />
+                                                </svg></span> USD
+                                            <i class="far fa-chevron-down"></i>
+                                        </button>
+
+                                        <ul class="dropdown-menu lang_dropdown">
+                                            <li>
+                                                <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                    <span class="flag_ico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                            viewBox="0 0 22 22" fill="none">
+                                                            <path
+                                                                d="M15.0822 8.673L14.3355 10.2395H4L4.58948 8.673H15.0822ZM13.6753 11.7605L12.9129 13.3422H4L4.58948 11.7605H13.6753ZM17 4.54373L16.0726 6.46768C15.7791 6.22433 15.4595 6.0038 15.1137 5.80608C14.7678 5.60836 14.3958 5.4512 13.9976 5.3346C13.5994 5.21293 13.1723 5.15209 12.7164 5.15209C11.8781 5.15209 11.1314 5.37009 10.4764 5.80608C9.82144 6.24208 9.30532 6.89607 8.92805 7.76806C8.55603 8.63498 8.37001 9.71483 8.37001 11.0076C8.37001 12.3004 8.55603 13.3802 8.92805 14.2471C9.30532 15.1141 9.82144 15.7655 10.4764 16.2015C11.1314 16.6324 11.8781 16.8479 12.7164 16.8479C13.1775 16.8479 13.6072 16.7896 14.0054 16.673C14.4089 16.5564 14.7757 16.4043 15.1058 16.2167C15.4412 16.0241 15.7424 15.8213 16.0097 15.6084L16.9607 17.5247C16.4053 18.0114 15.7608 18.379 15.0272 18.6274C14.2936 18.8758 13.5234 19 12.7164 19C11.4012 19 10.2354 18.6781 9.21886 18.0342C8.20758 17.3904 7.41374 16.4728 6.83736 15.2814C6.26098 14.0849 5.97279 12.6603 5.97279 11.0076C5.97279 9.34981 6.26098 7.92269 6.83736 6.72624C7.41374 5.52978 8.20758 4.60963 9.21886 3.96578C10.2354 3.32193 11.4012 3 12.7164 3C13.5548 3 14.3355 3.13435 15.0586 3.40304C15.7817 3.66667 16.4289 4.04689 17 4.54373Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </span> Euro</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                    <span class="flag_ico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                            viewBox="0 0 22 22" fill="none">
+                                                            <path
+                                                                d="M10.071 20.1818V2H11.2358V20.1818H10.071ZM13.4304 7.81676C13.3641 7.1965 13.0848 6.71354 12.5923 6.3679C12.1046 6.02225 11.4702 5.84943 10.6889 5.84943C10.1397 5.84943 9.66856 5.93229 9.27557 6.09801C8.88258 6.26373 8.58191 6.48864 8.37358 6.77273C8.16525 7.05682 8.05871 7.38116 8.05398 7.74574C8.05398 8.04877 8.12263 8.31155 8.25994 8.53409C8.40199 8.75663 8.59375 8.94602 8.83523 9.10227C9.0767 9.25379 9.34422 9.38163 9.63778 9.4858C9.93134 9.58996 10.2273 9.67756 10.5256 9.74858L11.8892 10.0895C12.4384 10.2173 12.9664 10.3902 13.473 10.608C13.9844 10.8258 14.4413 11.1004 14.8438 11.4318C15.2509 11.7633 15.5729 12.1634 15.8097 12.6321C16.0464 13.1009 16.1648 13.6501 16.1648 14.2798C16.1648 15.1321 15.947 15.8826 15.5114 16.5313C15.0758 17.1752 14.446 17.6795 13.6222 18.044C12.803 18.4039 11.8111 18.5838 10.6463 18.5838C9.51468 18.5838 8.5322 18.4086 7.69886 18.0582C6.87027 17.7079 6.22159 17.1965 5.75284 16.5241C5.28883 15.8518 5.03788 15.0327 5 14.0668H7.59233C7.63021 14.5734 7.78646 14.9948 8.06108 15.331C8.3357 15.6671 8.69318 15.9181 9.13352 16.0838C9.5786 16.2495 10.0758 16.3324 10.625 16.3324C11.1979 16.3324 11.6998 16.2472 12.1307 16.0767C12.5663 15.9015 12.9072 15.66 13.1534 15.3523C13.3996 15.0398 13.5251 14.6752 13.5298 14.2585C13.5251 13.8797 13.4138 13.5672 13.196 13.321C12.9782 13.0701 12.6728 12.8617 12.2798 12.696C11.8916 12.5256 11.437 12.3741 10.9162 12.2415L9.26136 11.8153C8.06345 11.5076 7.11648 11.0412 6.42045 10.4162C5.72917 9.78646 5.38352 8.95076 5.38352 7.90909C5.38352 7.05208 5.61553 6.30161 6.07955 5.65767C6.5483 5.01373 7.18513 4.51421 7.99006 4.15909C8.79498 3.79924 9.70644 3.61932 10.7244 3.61932C11.7566 3.61932 12.661 3.79924 13.4375 4.15909C14.2188 4.51421 14.8319 5.009 15.277 5.64347C15.7221 6.2732 15.9517 6.99763 15.9659 7.81676H13.4304Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </span> USD
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item lang_country" href="javascript:void(0)">
+                                                    <span class="flag_ico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="19"
+                                                            viewBox="0 0 41 19" fill="none">
+                                                            <path
+                                                                d="M34.321 18.1818V0H35.4858V18.1818H34.321ZM37.6804 5.81676C37.6141 5.1965 37.3348 4.71354 36.8423 4.3679C36.3546 4.02225 35.7202 3.84943 34.9389 3.84943C34.3897 3.84943 33.9186 3.93229 33.5256 4.09801C33.1326 4.26373 32.8319 4.48864 32.6236 4.77273C32.4152 5.05682 32.3087 5.38116 32.304 5.74574C32.304 6.04877 32.3726 6.31155 32.5099 6.53409C32.652 6.75663 32.8438 6.94602 33.0852 7.10227C33.3267 7.25379 33.5942 7.38163 33.8878 7.4858C34.1813 7.58996 34.4773 7.67756 34.7756 7.74858L36.1392 8.08949C36.6884 8.21733 37.2164 8.39015 37.723 8.60796C38.2344 8.82576 38.6913 9.10038 39.0938 9.43182C39.5009 9.76326 39.8229 10.1634 40.0597 10.6321C40.2964 11.1009 40.4148 11.6501 40.4148 12.2798C40.4148 13.1321 40.197 13.8826 39.7614 14.5313C39.3258 15.1752 38.696 15.6795 37.8722 16.044C37.053 16.4039 36.0611 16.5838 34.8963 16.5838C33.7647 16.5838 32.7822 16.4086 31.9489 16.0582C31.1203 15.7079 30.4716 15.1965 30.0028 14.5241C29.5388 13.8518 29.2879 13.0327 29.25 12.0668H31.8423C31.8802 12.5734 32.0365 12.9948 32.3111 13.331C32.5857 13.6671 32.9432 13.9181 33.3835 14.0838C33.8286 14.2495 34.3258 14.3324 34.875 14.3324C35.4479 14.3324 35.9498 14.2472 36.3807 14.0767C36.8163 13.9015 37.1572 13.66 37.4034 13.3523C37.6496 13.0398 37.7751 12.6752 37.7798 12.2585C37.7751 11.8797 37.6638 11.5672 37.446 11.321C37.2282 11.0701 36.9228 10.8617 36.5298 10.696C36.1416 10.5256 35.687 10.3741 35.1662 10.2415L33.5114 9.81534C32.3134 9.50758 31.3665 9.04119 30.6705 8.41619C29.9792 7.78646 29.6335 6.95076 29.6335 5.90909C29.6335 5.05208 29.8655 4.30161 30.3295 3.65767C30.7983 3.01373 31.4351 2.51421 32.2401 2.15909C33.045 1.79924 33.9564 1.61932 34.9744 1.61932C36.0066 1.61932 36.911 1.79924 37.6875 2.15909C38.4688 2.51421 39.0819 3.009 39.527 3.64347C39.9721 4.2732 40.2017 4.99763 40.2159 5.81676H37.6804Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M20.3135 5.4541L22.5152 9.48109L24.7524 5.4541H27.4726L24.1842 10.9086L27.5294 16.3632H24.8234L22.5152 12.4356L20.2282 16.3632H17.501L20.8248 10.9086L17.5862 5.4541H20.3135Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M0 1.81738H3.22443L7.54261 12.3572H7.71307L12.0313 1.81738H15.2557V16.3628H12.7273V6.36994H12.5923L8.57244 16.3202H6.68324L2.66335 6.34863H2.52841V16.3628H0V1.81738Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </span> MXN
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li> -->
+
+                            </ul>
+                        </div>
+
+
+                        <!--  ======= User DropDown =========  -->
+                        <!-- <div class="nav-item dropdown user_dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="user-drop" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/user.png" alt="">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="user-drop">
+                                <div class="user_info">
+                                    <div class="user_name">
+                                        <div>Alex Willson</div>
+                                        <div class="user_email">
+                                            <small>alexwillson@gmail.com</small>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#!"><i class="ion-android-person"></i> My Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"><i class="ion-log-out"></i> Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <button class="navbar-toggler" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Banner -->
+    <section class="hero-section" style="background-image: url(img/hero-bg-ai.png);">
+        <div class="dots-bg"></div>
+        <div class="container h-100">
+            <div class="hero-banner">
+                <div class="heroContent text-center w-100" style="margin: 0 auto;">
+                    <h1 class="hero-title"
+                        style="margin: 0 auto 20px auto; font-size: 75px; text-transform: uppercase; letter-spacing: 2px;">
+                        Master the Algorithms of Tomorrow</h1>
+                    <p style="font-size: 22px; margin: 0 auto 50px auto; color: #fff; max-width: 800px;">Join the elite
+                        network of AI professionals and learn cutting-edge neural network architectures, machine
+                        learning, and deep tech.</p>
+                    <div class="searchForm" style="max-width: 800px; margin: 0 auto;">
+                        <form class="searchform-element"
+                            style="background: rgba(20,25,40,0.8); border: 1px solid var(--theme-color); border-radius: 50px; padding: 10px;">
+                            <div class="search-field position-relative" style="flex: 1;">
+                                <i class="fa fa-search"
+                                    style="position: absolute; color:var(--theme-color); font-size:20px; background:none; top:15px; left: 20px;"></i>
+                                <input type="text" placeholder="Search AI Courses, Models, or Instructors..."
+                                    class="form-control"
+                                    style="padding-left: 55px; height: 50px; font-size: 18px; border: none; background: transparent !important; color: #fff;">
+                            </div>
+                            <div class="search-action">
+                                <button type="submit" class="s-btn btn-primary"
+                                    style="padding: 12px 40px; font-size: 18px; border-radius: 40px; height: 50px;">Start
+                                    Learning</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Learning Tracks -->
+    <section class="service-category-section mb-0 section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 class="service-provider-title" style="font-size: 45px; font-weight: 800;">
+                    AI Learning <span>Tracks</span>
+                </h2>
+                <p style="font-size: 20px; max-width: 600px; margin: 15px auto; color: #a0aab2;">Master the foundational
+                    pillars of artificial intelligence and deep tech.</p>
+            </div>
+            <div class="category-cards">
+                <div class="row g-4">
+                    <!-- Track 1 -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#">
+                            <div class="category-box text-center p-5" style="height: 100%;">
+                                <div class="category-icon mb-4"
+                                    style="font-size: 45px; color: var(--theme-color); background: rgba(0, 240, 255, 0.1); width: 100px; height: 100px; line-height: 100px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.2);">
+                                    <i class="fa fa-cogs"></i>
+                                </div>
+                                <h3 style="font-size: 24px; margin-bottom: 15px;">Machine Learning</h3>
+                                <p style="font-size: 16px; color: #a0aab2;">Master regression, classification, and
+                                    fundamental ML models from scratch.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Track 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#">
+                            <div class="category-box text-center p-5" style="height: 100%;">
+                                <div class="category-icon mb-4"
+                                    style="font-size: 45px; color: var(--link-color); background: rgba(255, 0, 255, 0.1); width: 100px; height: 100px; line-height: 100px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 20px rgba(255, 0, 255, 0.2);">
+                                    <i class="fa fa-comments"></i>
+                                </div>
+                                <h3 style="font-size: 24px; margin-bottom: 15px;">Natural Language</h3>
+                                <p style="font-size: 16px; color: #a0aab2;">Build LLMs, Transformers, and understand
+                                    sequence-to-sequence models.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Track 3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#">
+                            <div class="category-box text-center p-5" style="height: 100%;">
+                                <div class="category-icon mb-4"
+                                    style="font-size: 45px; color: var(--theme-color); background: rgba(0, 240, 255, 0.1); width: 100px; height: 100px; line-height: 100px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.2);">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <h3 style="font-size: 24px; margin-bottom: 15px;">Computer Vision</h3>
+                                <p style="font-size: 16px; color: #a0aab2;">Implement CNNs, object detection, and
+                                    generative adversarial networks (GANs).</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Track 4 -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#">
+                            <div class="category-box text-center p-5" style="height: 100%;">
+                                <div class="category-icon mb-4"
+                                    style="font-size: 45px; color: var(--link-color); background: rgba(255, 0, 255, 0.1); width: 100px; height: 100px; line-height: 100px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 20px rgba(255, 0, 255, 0.2);">
+                                    <i class="fa fa-microchip"></i>
+                                </div>
+                                <h3 style="font-size: 24px; margin-bottom: 15px;">AI Robotics</h3>
+                                <p style="font-size: 16px; color: #a0aab2;">Reinforcement learning, kinematics, and
+                                    agent-based AI simulations.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top AI Instructors -->
+    <section class="service-provider-section section-padding"
+        style="background: rgba(0,0,0,0.3) !important; position: relative;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 class="service-provider-title" style="font-size: 45px; font-weight: 800;">
+                    Top AI <span>Instructors</span>
+                </h2>
+                <p style="font-size: 20px; max-width: 600px; margin: 15px auto; color: #a0aab2;">Learn directly from
+                    engineers who have built the world's most advanced AI models.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Instructor 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="provider-box p-4 text-center" style="height: 100%;">
+                        <div class="provider-profile mb-4">
+                            <img src="img/u1.png" alt="Instructor"
+                                style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--theme-color); box-shadow: 0 0 20px var(--theme-color); object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h4 style="color: #fff; font-size: 22px; font-weight: bold;">Dr. Elena Rustov</h4>
+                        <p style="color: var(--theme-color); font-size: 16px; margin-bottom: 15px;">Ex-DeepMind
+                            Researcher</p>
+                        <div
+                            style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; display: flex; justify-content: space-around;">
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">15+</h5>
+                                <span style="font-size:14px; color:#aaa;">Models Deployed</span>
+                            </div>
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">42</h5>
+                                <span style="font-size:14px; color:#aaa;">Papers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="provider-box p-4 text-center" style="height: 100%;">
+                        <div class="provider-profile mb-4">
+                            <img src="img/u2.png" alt="Instructor"
+                                style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--link-color); box-shadow: 0 0 20px var(--link-color); object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h4 style="color: #fff; font-size: 22px; font-weight: bold;">James Chen</h4>
+                        <p style="color: var(--link-color); font-size: 16px; margin-bottom: 15px;">Lead AI Architect</p>
+                        <div
+                            style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; display: flex; justify-content: space-around;">
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">20+</h5>
+                                <span style="font-size:14px; color:#aaa;">Models Deployed</span>
+                            </div>
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">12</h5>
+                                <span style="font-size:14px; color:#aaa;">Papers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="provider-box p-4 text-center" style="height: 100%;">
+                        <div class="provider-profile mb-4">
+                            <img src="img/u3.png" alt="Instructor"
+                                style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--theme-color); box-shadow: 0 0 20px var(--theme-color); object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h4 style="color: #fff; font-size: 22px; font-weight: bold;">Anita Sharma</h4>
+                        <p style="color: var(--theme-color); font-size: 16px; margin-bottom: 15px;">OpenAI Contributor
+                        </p>
+                        <div
+                            style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; display: flex; justify-content: space-around;">
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">8+</h5>
+                                <span style="font-size:14px; color:#aaa;">Models Deployed</span>
+                            </div>
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">30</h5>
+                                <span style="font-size:14px; color:#aaa;">Papers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="provider-box p-4 text-center" style="height: 100%;">
+                        <div class="provider-profile mb-4">
+                            <img src="img/u4.png" alt="Instructor"
+                                style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--link-color); box-shadow: 0 0 20px var(--link-color); object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h4 style="color: #fff; font-size: 22px; font-weight: bold;">Marcus Cole</h4>
+                        <p style="color: var(--link-color); font-size: 16px; margin-bottom: 15px;">Robotics Director</p>
+                        <div
+                            style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; display: flex; justify-content: space-around;">
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">35+</h5>
+                                <span style="font-size:14px; color:#aaa;">Models Deployed</span>
+                            </div>
+                            <div>
+                                <h5 style="color:#fff; font-size:20px; font-weight: bold; margin:0;">18</h5>
+                                <span style="font-size:14px; color:#aaa;">Papers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="set-btn text-center mt-5">
+                <a href="#" class="btn btn-primary cmnBtn"
+                    style="padding: 12px 40px; font-size: 18px; border-radius: 40px;">View All Instructors</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The AI School Process -->
+    <section class="process-section section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 class="service-provider-title" style="font-size: 45px; font-weight: 800;">
+                    The AI School <span>Pipeline</span>
+                </h2>
+                <p style="font-size: 20px; max-width: 600px; margin: 15px auto; color: #a0aab2;">A rigorous 3-step
+                    process to transform you from a developer into an AI Architect.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="provider-box text-center p-5" style="height: 100%;">
+                        <div class="category-icon mb-4"
+                            style="font-size: 50px; color: var(--theme-color); background: rgba(0, 240, 255, 0.1); width: 120px; height: 120px; line-height: 120px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 25px rgba(0, 240, 255, 0.2);">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <h3 style="font-size: 26px; font-weight: bold; margin-bottom: 20px; color: #fff;">1. Learn
+                            Theory</h3>
+                        <p style="font-size: 18px; color: #a0aab2; line-height: 1.6;">Master the underlying calculus,
+                            linear algebra, and mathematical optimization behind neural networks.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="provider-box text-center p-5" style="height: 100%;">
+                        <div class="category-icon mb-4"
+                            style="font-size: 50px; color: var(--link-color); background: rgba(255, 0, 255, 0.1); width: 120px; height: 120px; line-height: 120px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 25px rgba(255, 0, 255, 0.2);">
+                            <i class="fa fa-laptop-code"></i>
+                        </div>
+                        <h3 style="font-size: 26px; font-weight: bold; margin-bottom: 20px; color: #fff;">2. Build
+                            Models</h3>
+                        <p style="font-size: 18px; color: #a0aab2; line-height: 1.6;">Get your hands dirty writing
+                            PyTorch and TensorFlow code to train transformers and diffusion models.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="provider-box text-center p-5" style="height: 100%;">
+                        <div class="category-icon mb-4"
+                            style="font-size: 50px; color: var(--theme-color); background: rgba(0, 240, 255, 0.1); width: 120px; height: 120px; line-height: 120px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 25px rgba(0, 240, 255, 0.2);">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <h3 style="font-size: 26px; font-weight: bold; margin-bottom: 20px; color: #fff;">3. Deploy to
+                            Production</h3>
+                        <p style="font-size: 18px; color: #a0aab2; line-height: 1.6;">Learn MLOps, model quantization,
+                            and API deployment to scale your models to millions of users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join the AI Revolution CTA -->
+    <section class="download-appWrap section-padding"
+        style="background: linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%) !important; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); padding: 100px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 m-auto text-center">
+                    <h2
+                        style="font-size: 55px; font-weight: 800; color: #fff; margin-bottom: 25px; text-shadow: 0 0 20px rgba(0,240,255,0.5);">
+                        Join the AI Revolution</h2>
+                    <p
+                        style="font-size: 24px; color: #a0aab2; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                        The next cohort starts soon. Don't be replaced by AI—be the one who builds it.</p>
+                    <a href="#" class="header_filled_btn"
+                        style="display: inline-block; padding: 20px 50px; font-size: 22px; font-weight: bold; border-radius: 50px; letter-spacing: 1px; text-transform: uppercase;">Enroll
+                        in AI School Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-5 col-xl-5">
+                    <div class="footer-block">
+                        <figure><img src="img/logo-ai.png" style="max-height: 55px;" alt=""> </figure>
+                        <p class="footer-pera">Lorem ipsum dolor sit amet consectetur. Amet mollis sit donec consectetur
+                            auctor tincidunt morbi iaculis.</p>
+                        <div class="social-icons-group">
+                            <div class="social-icon">
+                                <a href="#" class="google-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M21.999 12.0445C22.0141 13.8002 21.5571 15.5278 20.676 17.0465C19.7955 18.5635 18.5239 19.8164 16.994 20.6745C15.4895 21.5481 13.7827 22.0128 12.043 22.0225C10.2953 22.0114 8.58101 21.5425 7.071 20.6625C5.55964 19.782 4.3048 18.5217 3.431 17.0065C2.52778 15.5063 2.03432 13.7952 2 12.0445C2 10.2865 2.465 8.55946 3.345 7.03846C4.2188 5.52326 5.47364 4.2629 6.985 3.38246C8.49472 2.5026 10.2086 2.03369 11.956 2.02246C14.363 2.03246 16.686 2.90846 18.501 4.49246C18.5668 4.55393 18.6192 4.62825 18.655 4.71082C18.6909 4.79339 18.7094 4.88244 18.7094 4.97246C18.7094 5.06248 18.6909 5.15153 18.655 5.2341C18.6192 5.31667 18.5668 5.391 18.501 5.45246L16.649 7.30846C16.5289 7.4153 16.3737 7.47432 16.213 7.47432C16.0523 7.47432 15.8971 7.4153 15.777 7.30846C14.7285 6.42783 13.4118 5.92959 12.043 5.89546C10.9739 5.89293 9.92326 6.17422 8.99843 6.7106C8.0736 7.24698 7.30771 8.01923 6.779 8.94846C6.21839 9.88464 5.91739 10.9533 5.907 12.0445C5.91197 13.1136 6.19786 14.1626 6.736 15.0865C7.27371 16.0139 8.0486 16.7816 8.98108 17.3105C9.91356 17.8395 10.97 18.1108 12.042 18.0965C13.1085 18.0951 14.1558 17.8122 15.078 17.2765C16.262 16.5672 17.178 15.486 17.683 14.2015H13.119C13.0331 14.2016 12.9481 14.1846 12.8688 14.1514C12.7896 14.1183 12.7178 14.0696 12.6576 14.0083C12.5974 13.947 12.5501 13.8743 12.5184 13.7945C12.4867 13.7147 12.4713 13.6293 12.473 13.5435V10.9655C12.4715 10.8802 12.4872 10.7955 12.5191 10.7163C12.5511 10.6372 12.5986 10.5654 12.6588 10.505C12.7191 10.4446 12.7909 10.397 12.87 10.365C12.949 10.3329 13.0337 10.3171 13.119 10.3185H21.267C21.4214 10.3161 21.5714 10.3692 21.69 10.4681C21.8085 10.567 21.8876 10.7052 21.913 10.8575C21.977 11.2508 22.0057 11.6465 21.999 12.0445Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#" class="fb-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M14.7264 2C13.4325 2 12.1917 2.51398 11.2768 3.42886C10.3619 4.34374 9.84794 5.58459 9.84794 6.87842V9.59452H7.23733C7.10653 9.59452 7 9.7 7 9.83185V13.4182C7 13.5489 7.10548 13.6555 7.23733 13.6555H9.84794V21.0127C9.84794 21.1435 9.95342 21.25 10.0853 21.25H13.6716C13.8024 21.25 13.9089 21.1445 13.9089 21.0127V13.6555H16.5427C16.6514 13.6555 16.7463 13.5816 16.7727 13.4762L17.6692 9.88986C17.6781 9.85487 17.6788 9.81832 17.6714 9.783C17.6639 9.74769 17.6486 9.71453 17.6264 9.68605C17.6042 9.65757 17.5758 9.63453 17.5434 9.61867C17.511 9.60281 17.4754 9.59455 17.4393 9.59452H13.9089V6.87842C13.9089 6.77107 13.93 6.66477 13.9711 6.56559C14.0122 6.46641 14.0724 6.3763 14.1483 6.30039C14.2242 6.22448 14.3144 6.16427 14.4135 6.12318C14.5127 6.0821 14.619 6.06096 14.7264 6.06096H17.4688C17.5996 6.06096 17.7062 5.95548 17.7062 5.82363V2.23733C17.7062 2.10653 17.6007 2 17.4688 2H14.7264Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-7 col-xl-7">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6">
+                            <div class="footer-nav-links">
+                                <h6>Discover</h6>
+                                <ul class="footer-links">
+                                    <li><a href="sign-up-service-provider.html">Register as a professional</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6">
+                            <div class="footer-nav-links">
+                                <h6>Company</h6>
+                                <ul class="footer-links">
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-12">
+                            <div class="footer-nav-links">
+                                <h6>Terms</h6>
+                                <ul class="footer-links">
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                    <li><a href="terms.html">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12">
+                        <span>
+                            Copyright @
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> AI School
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Bootstrap v5.3.0  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper 10.0.3 -->
+<script src="/static/js/jquery.matchHeight-min.js"></script>
+<script src="/static/js/swiper-bundle.min.js"></script>
+<script src="/static/js/theia-sticky-sidebar.js"></script>
+<script src="/static/js/script.js"></script>
+    <script>
+
+        // Match Height
+        $(function () {
+            $(".provider-box").matchHeight();
+            $(".name-title").matchHeight();
+            $(".service-title").matchHeight();
+            $(".company-name").matchHeight();
+            $(".provider-work-info").matchHeight()
+
+        });
+
+        setTimeout(function () {
+            $(function () {
+                $(".review-title").matchHeight();
+                $(".review-box").matchHeight();
+                $(".service-details .set-align").matchHeight();
+                $(".service-details .provider-dtl").matchHeight();
+            });
+        }, 1000);
+
+
+        // Swiper
+        var swiper = new Swiper(".grade_swipersilder", {
+            spaceBetween: 30,
+            speed: 1200,
+            grabCursor: true,
+            //cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: true,
+            //keyboard: true,
+            breakpoints: {
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+
+                767: {
+                    slidesPerView: 2,
+                },
+
+                991: {
+                    slidesPerView: 3,
+                },
+
+                1200: {
+                    slidesPerView: 3,
+
+                },
+            },
+        });
+
+        // serviceSlide
+        $(document).ready(function () {
+            var mySwiper = new Swiper(".serviceSlide", {
+                slidesPerView: 4,
+                spaceBetween: 25,
+                loop: true,
+                speed: 1200,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+
+                    1199: {
+                        slidesPerView: 3,
+                        spaceBetween: 15,
+                    },
+
+                    1400: {
+                        slidesPerView: 4,
+                    },
+
+                }
+            });
+        });
+
+        // reviewSlide
+        $(document).ready(function () {
+            var mySwiper = new Swiper(".reviewSlide", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                loop: true,
+                centeredSlides: true,
+                //roundLengths: true,
+                loop: true,
+                speed: 1200,
+                grabCursor: true,
+                //mousewheel: true,
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetweenSlides: 20,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetweenSlides: 20,
+                    },
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetweenSlides: 20,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                    },
+
+                }
+            });
+        });
+
+    </script>
+</body>
+{% endraw %}
+</html>

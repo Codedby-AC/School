@@ -19,6 +19,9 @@ router = APIRouter()
 @router.post("/users")
 
 def create_user(user: UserCreate):
+    
+    
+    print(user)
 
     db: Session = SessionLocal()
 
