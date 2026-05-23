@@ -8,6 +8,7 @@ from app.models.student import Student
 from app.routes import user
 from app.routes import student
 from app.routes import predict
+from app.routes import progress
 
 app = FastAPI()
 
@@ -38,3 +39,4 @@ async def home():
 app.include_router(user.router)
 app.include_router(student.router)
 app.include_router(predict.router)
+app.include_router(progress.router)
