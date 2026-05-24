@@ -10,6 +10,41 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# ---------------- LOGO HEADER ---------------- #
+
+col_logo, col_title = st.columns([1, 5])
+
+with col_logo:
+
+    st.image(
+        "assets/logo.png",
+        width=120
+    )
+
+with col_title:
+
+    st.markdown("""
+    <div style='margin-top:15px;'>
+
+    <h1 style='
+    color:white;
+    margin-bottom:0px;
+    font-size:52px;
+    font-weight:900;
+    '>
+    NeuroCampus
+    </h1>
+
+    <p style='
+    color:#94a3b8;
+    font-size:18px;
+    '>
+    By ModelAI • AI Powered Smart Education Platform
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
 # SECURITY CHECK
 if "logged_in" not in st.session_state:
     st.switch_page("frontend.py")
