@@ -135,6 +135,8 @@ st.markdown("""
     border-radius:12px !important;
 }
 
+/* SELECT */
+
 .stSelectbox div[data-baseweb="select"]{
 
     background:#0f172a !important;
@@ -147,6 +149,57 @@ button[data-baseweb="tab"]{
 
     font-size:16px;
     font-weight:700;
+}
+
+/* CHATBOT FLOAT BUTTON */
+
+.chat-btn{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:36px;
+
+    color:white;
+
+    text-decoration:none;
+
+    box-shadow:
+    0px 0px 25px rgba(37,99,235,0.45);
+
+    z-index:99999;
+
+    transition:0.3s;
+}
+
+.chat-btn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0px 0px 35px rgba(124,58,237,0.55);
 }
 
 </style>
@@ -163,7 +216,7 @@ if "admin" not in st.session_state:
     st.session_state.admin = False
 
 # =========================================================
-# TOP LOGO HEADER
+# TOP HEADER
 # =========================================================
 
 logo_col, text_col = st.columns([1,5])
@@ -192,7 +245,7 @@ with text_col:
     """, unsafe_allow_html=True)
 
 # =========================================================
-# LAYOUT
+# MAIN LAYOUT
 # =========================================================
 
 left, right = st.columns([1.3,1])
@@ -239,7 +292,7 @@ with right:
     )
 
     # =====================================================
-    # LOGIN
+    # LOGIN TAB
     # =====================================================
 
     with login_tab:
@@ -248,7 +301,7 @@ with right:
 
         role = st.selectbox(
             "Select Role",
-            ["Student","Admin"]
+            ["Student", "Admin"]
         )
 
         email = st.text_input(
@@ -260,17 +313,21 @@ with right:
             type="password"
         )
 
+        # =================================================
+        # LOGIN BUTTON
+        # =================================================
+
         if st.button("Login"):
 
-            # =================================================
+            # =============================================
             # ADMIN LOGIN
-            # =================================================
+            # =============================================
 
             if role == "Admin":
 
                 if (
-                    email == "admin@gmail.com"
-                    and password == "admin123"
+                    email.strip() == "admin@gmail.com"
+                    and password.strip() == "admin123"
                 ):
 
                     st.session_state.logged_in = True
@@ -290,23 +347,27 @@ with right:
                         "Invalid Admin Credentials"
                     )
 
-            # =================================================
+            # =============================================
             # STUDENT LOGIN
-            # =================================================
+            # =============================================
 
             else:
 
                 login_data = {
 
-                    "email": email,
-                    "password": password
+                    "email": email.strip(),
+                    "password": password.strip()
                 }
 
                 try:
 
                     response = requests.post(
+
                         "http://127.0.0.1:8000/login",
-                        json=login_data
+
+                        json=login_data,
+
+                        timeout=10
                     )
 
                     if response.status_code == 200:
@@ -322,20 +383,32 @@ with right:
                             "pages/dashboard.py"
                         )
 
+                    elif response.status_code == 401:
+
+                        st.error(
+                            "Invalid Email or Password"
+                        )
+
                     else:
 
                         st.error(
-                            "Invalid Credentials"
+                            f"Server Error: {response.text}"
                         )
 
-                except:
+                except requests.exceptions.ConnectionError:
 
                     st.error(
                         "Backend Server Not Running"
                     )
 
+                except Exception as e:
+
+                    st.error(
+                        f"Error: {str(e)}"
+                    )
+
     # =====================================================
-    # SIGNUP
+    # SIGNUP TAB
     # =====================================================
 
     with signup_tab:
@@ -359,16 +432,20 @@ with right:
 
             signup_data = {
 
-                "name": name,
-                "email": signup_email,
-                "password": signup_password
+                "name": name.strip(),
+                "email": signup_email.strip(),
+                "password": signup_password.strip()
             }
 
             try:
 
                 response = requests.post(
+
                     "http://127.0.0.1:8000/users",
-                    json=signup_data
+
+                    json=signup_data,
+
+                    timeout=10
                 )
 
                 if response.status_code == 200:
@@ -383,13 +460,31 @@ with right:
                         response.text
                     )
 
-            except:
+            except requests.exceptions.ConnectionError:
 
                 st.error(
                     "Backend Server Not Running"
+                )
+
+            except Exception as e:
+
+                st.error(
+                    f"Error: {str(e)}"
                 )
 
     st.markdown(
         "</div>",
         unsafe_allow_html=True
     )
+
+# =========================================================
+# SHIKSHA AI FLOATING BUTTON
+# =========================================================
+
+st.markdown("""
+<a href="/shiksha_ai" target="_self">
+    <div class="chat-btn">
+        🤖
+    </div>
+</a>
+""", unsafe_allow_html=True)
